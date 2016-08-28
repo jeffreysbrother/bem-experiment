@@ -31,24 +31,20 @@ body {
   padding-bottom: 170px;
 }
 
-.top-blue {
+.top {
   background-color: #0176C5;
   color: #fff;
-  p {
+  .top__phone {
     padding: 8px;
     margin: 0;
     font-size: 15px;
     font-weight: bold;
-    a {
+    float: right;
+    .top__phonelink {
       color: #fff;
     }
   }
-  p:first-of-type {
-    float: left;
-  }
-  p:last-of-type {
-    float: right;
-  }
+
 }
 
 .top-white {
