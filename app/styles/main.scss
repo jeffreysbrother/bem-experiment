@@ -34,9 +34,6 @@ body {
 .top-blue {
   background-color: #0176C5;
   color: #fff;
-  img {
-    padding-top: 8px;
-  }
   p {
     padding: 8px;
     margin: 0;
@@ -133,7 +130,7 @@ body {
 
 
 
-.order-section {
+.order {
   padding: 15px;
   text-align: center;
   div {
@@ -152,10 +149,8 @@ body {
   hr {
     border-color: #ccc;
   }
-  img {
+  &__img {
     margin: 0 auto;
-  }
-  .product-img {
     margin-bottom: 20px;
   }
   button {
@@ -175,6 +170,7 @@ body {
 
 .questions {
   margin-top: 38px;
+  font-weight: bold;
 }
 
 
