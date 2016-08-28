@@ -1,0 +1,238 @@
+$icon-font-path: '../fonts/';
+
+/* SASS variable overrides before the import */
+$body-bg: #CCCCCC;
+
+/* fonts setup */
+$font-family-sans-serif: 'Lato', sans-serif;
+$font-size-base: 18px;
+// $font-size-h1: floor(($font-size-base * 3.11)) !default; // ~56px
+$brand-primary: #e23a1d; /* used for the button CTA and the h1 color */
+$btn-font-weight: 700;
+$btn-border-radius-large: 24px;
+
+h1 {
+  font-size: 49px;
+  font-weight: bold;
+}
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body {
+  font-family: $font-family-sans-serif;
+  counter-reset: step-counter;
+}
+
+.container {
+  max-width: 1800px;
+  background-color: #fff;
+  padding-bottom: 170px;
+}
+
+.top-blue {
+  background-color: #0176C5;
+  color: #fff;
+  img {
+    padding-top: 8px;
+  }
+  p {
+    padding: 8px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    a {
+      color: #fff;
+    }
+  }
+  p:first-of-type {
+    float: left;
+  }
+  p:last-of-type {
+    float: right;
+  }
+}
+
+.top-white {
+  background-color: #fff;
+  .header-align {
+    text-align: right;
+    @media screen and (max-width: 991px) {
+      text-align: inherit;
+    }
+  }
+  .ex-logo {
+    margin: 26px;
+  }
+  .seals {
+    margin-top: 10px;
+  }
+  .btn {
+    margin: 30px;
+    float: right;
+  }
+}
+
+
+
+
+.three-ingredients {
+  img {
+    margin: 0 auto 30px auto;
+  }
+  p, h2 {
+    text-align: center;
+  }
+  h2 {
+    font-family: 'Just Another Hand';
+    color: #0176C5;
+    margin-bottom: 0;
+  }
+}
+
+
+.background-contain {
+  padding-bottom: 58px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (min-width: $screen-md-min) {
+    background-image: url("../images/bg-car.jpg");
+    background-position: 0% -22%;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+  }
+}
+
+
+
+.form-button {
+  background-color: #0176C5;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 20px;
+  border: none;
+}
+
+
+.three-steps {
+  padding-top: 28px;
+  padding-bottom: 120px;
+  position: relative;
+  h3 {
+    margin-bottom: 60px;
+    font-weight: bold;
+    color: #0176C5;
+    text-transform: uppercase;
+  }
+}
+
+
+
+
+.order-section {
+  padding: 15px;
+  text-align: center;
+  div {
+    border: 1px solid #ccc;
+    border-right: none;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    @media (max-width: 768px) {
+      border-right: 1px solid #ccc;
+      border-bottom: none;
+    }
+  }
+  div:last-of-type {
+    border: 5px solid #0176C5;
+  }
+  hr {
+    border-color: #ccc;
+  }
+  img {
+    margin: 0 auto;
+  }
+  .product-img {
+    margin-bottom: 20px;
+  }
+  button {
+    margin: 40px auto 10px auto;
+    border-radius: 8px;
+    @media (max-width: 1200px) {
+      width: 100%;
+      font-size: 17px;
+      padding: 10px;
+    }
+  }
+  button.buy-now {
+    width: auto;
+    padding: 10px 35px;
+  }
+}
+
+.questions {
+  margin-top: 38px;
+}
+
+
+
+
+
+// buttons
+.btn-blue {
+  background-color: #0176C5;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 45px;
+  border: none;
+}
+
+.btn:hover,
+.btn:active,
+.btn:hover,
+.btn:focus {
+  color: #fff!important;
+  background-color: #0176C5!important;
+}
+
+// equal height columns
+.row-xs-flex {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+}
+@media (min-width: 768px) {
+  .row-sm-flex {
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  .row-md-flex {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .row-lg-flex {
+    display: flex;
+  }
+}
+
+
+
+
+// make width of page wider in large viewports
+@media screen and (min-width: 1620px) {
+  .container {
+      width: 1600px;
+      > .row,
+      .background-contain {
+        padding-left: 12%;
+        padding-right: 12%;
+      }
+  }
+}
