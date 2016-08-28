@@ -55,14 +55,15 @@ body {
 }
 
 
-.three-ingredients {
-  img {
+.three {
+  &__img {
     margin: 0 auto 30px auto;
   }
-  p, h2 {
+  &__title,
+  &__content {
     text-align: center;
   }
-  h2 {
+  &__title {
     font-family: 'Just Another Hand';
     color: #0176C5;
     margin-bottom: 0;
