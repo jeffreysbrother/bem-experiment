@@ -34,40 +34,25 @@ body {
 .top {
   background-color: #0176C5;
   color: #fff;
-  .top__phone {
+  &__phone {
     padding: 8px;
     margin: 0;
     font-size: 15px;
     font-weight: bold;
     float: right;
-    .top__phonelink {
-      color: #fff;
-    }
   }
-
+  &__phonelink {
+    color: #fff;
+  }
 }
 
-.top-white {
+.cta {
   background-color: #fff;
-  .header-align {
-    text-align: right;
-    @media screen and (max-width: 991px) {
-      text-align: inherit;
-    }
-  }
-  .ex-logo {
-    margin: 26px;
-  }
-  .seals {
-    margin-top: 10px;
-  }
-  .btn {
+  &__btn {
     margin: 30px;
     float: right;
   }
 }
-
-
 
 
 .three-ingredients {
