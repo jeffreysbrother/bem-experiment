@@ -10,6 +10,7 @@ $font-size-base: 18px;
 $brand-primary: #e23a1d; /* used for the button CTA and the h1 color */
 $btn-font-weight: 700;
 $btn-border-radius-large: 24px;
+$theme-color: #0176C5;
 
 h1 {
   font-size: 49px;
@@ -22,7 +23,6 @@ h1 {
 
 body {
   font-family: $font-family-sans-serif;
-  counter-reset: step-counter;
 }
 
 .container {
@@ -32,7 +32,7 @@ body {
 }
 
 .top {
-  background-color: #0176C5;
+  background-color: $theme-color;
   color: #fff;
   &__phone {
     padding: 8px;
@@ -65,7 +65,7 @@ body {
   }
   &__title {
     font-family: 'Just Another Hand';
-    color: #0176C5;
+    color: $theme-color;
     margin-bottom: 0;
   }
 }
@@ -88,9 +88,9 @@ body {
     }
   }
   &__item:last-of-type {
-    border: 5px solid #0176C5;
+    border: 5px solid $theme-color;
   }
-  hr {
+  &__separator {
     border-color: #ccc;
   }
   &__img {
@@ -119,7 +119,7 @@ body {
 
 // buttons
 .btn-blue {
-  background-color: #0176C5;
+  background-color: $theme-color;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
@@ -132,7 +132,7 @@ body {
 .btn:hover,
 .btn:focus {
   color: #fff!important;
-  background-color: #0176C5!important;
+  background-color: $theme-color!important;
 }
 
 // equal height columns
