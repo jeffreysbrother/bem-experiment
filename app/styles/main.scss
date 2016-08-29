@@ -34,8 +34,13 @@ h1 {
 }
 
 .top {
+  @extend .row;
   background-color: $theme-color;
   color: #fff;
+  margin-bottom: 20px;
+  div {
+    @extend .col-md-12;
+  }
   &__phone {
     padding: 8px;
     margin: 0;
@@ -48,21 +53,12 @@ h1 {
   }
 }
 
-.cta {
-  background-color: #fff;
-  &__btn {
-    margin: 30px;
-    float: right;
-    @media (max-width: 768px) {
-      margin: 30px auto;
-      display: block;
-      float: none;
-    }
-  }
-}
-
 
 .three {
+  @extend .row;
+  div {
+    @extend .col-md-4;
+  }
   &__img {
     margin: 0 auto 30px auto;
   }
@@ -78,10 +74,13 @@ h1 {
 }
 
 
-
 .order {
+  @extend .row;
   padding: 15px;
   text-align: center;
+  div {
+    @extend .col-md-4;
+  }
   &__item {
     border: 1px solid #ccc;
     border-right: none;
@@ -113,11 +112,18 @@ h1 {
   }
 }
 
-.questions {
-  margin-top: 38px;
-  font-weight: bold;
-}
 
+.questions {
+  @extend .row;
+  margin-top: 38px;
+  &__content {
+    text-align: center;
+    font-weight: bold;
+  }
+  div {
+    @extend .col-md-12;
+  }
+}
 
 
 // buttons
