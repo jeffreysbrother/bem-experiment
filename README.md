@@ -6,7 +6,7 @@ An existing project utilizing Sass and Bootstrap was updated to (partially) refl
 * no element selectors and no descendant selectors (except for where I am extending Bootstrap classes)
 * class naming convention: `.block__element--modifier`
 
-##benefits
+###benefits
 
 * the elimination of IDs and descendant selectors rids the project of unnecessary specificity; overrides are therefore more predictable.
 * modularity is increased when we force our styles to have low specificity
