@@ -13,6 +13,6 @@ An existing project utilizing Sass and Bootstrap was updated to (partially) refl
 
 
 
-See [this link]('https://coderwall.com/p/wixovg/bootstrap-without-all-the-debt') for information on what I refer to as "extending Bootstrap classes". I'm not sure if this is a good idea because it forces you to use element selectors and descendant selectors.
+See [this link](https://coderwall.com/p/wixovg/bootstrap-without-all-the-debt) for information on what I refer to as "extending Bootstrap classes". I'm not sure if this is a good idea because it forces you to use element selectors and descendant selectors.
 
-It's also not clear whether unique semantic tags (like `<header>` and `<footer>`) should have class names just for the sake of adhering to the BEM philosophy. 
+It's also not clear whether unique semantic tags (like `<header>` and `<footer>`) should have class names just for the sake of adhering to the BEM philosophy.
