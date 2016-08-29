@@ -31,7 +31,7 @@ h1 {
 }
 
 .top {
-  @extend .row;
+  @extend .row,
   background-color: $theme-color;
   color: #fff;
   margin-bottom: 20px;
@@ -47,6 +47,17 @@ h1 {
   }
   &__phonelink {
     color: #fff;
+  }
+}
+
+.message {
+  @extend .row;
+  div {
+    @extend .col-md-12;
+  }
+  &__content {
+    text-align: center;
+    margin: 25px;
   }
 }
 
