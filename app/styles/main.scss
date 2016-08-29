@@ -104,10 +104,15 @@ h1 {
   &__btn {
     margin: 40px auto 10px auto;
     border-radius: 8px;
+    background-color: $theme-color;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 45px;
+    border: none;
     @media (max-width: 1200px) {
       width: 100%;
       font-size: 17px;
-      padding: 10px;
     }
   }
 }
@@ -125,27 +130,6 @@ h1 {
   }
 }
 
-
-// buttons
-.btn-blue {
-  background-color: $theme-color;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 15px 45px;
-  border: none;
-  @media (max-width: 1200px) {
-    padding: 15px;
-  }
-}
-
-.btn:hover,
-.btn:active,
-.btn:hover,
-.btn:focus {
-  color: #fff!important;
-  background-color: $theme-color!important;
-}
 
 // equal height columns
 .row-xs-flex {
