@@ -18,6 +18,7 @@ $theme-color: #0176C5;
 // endbower
 
 body {
+  @extend .container;
   font-family: $font-family-sans-serif;
 }
 
