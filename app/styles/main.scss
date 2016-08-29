@@ -20,17 +20,14 @@ $theme-color: #0176C5;
 body {
   @extend .container;
   font-family: $font-family-sans-serif;
+  max-width: 1800px;
+  background-color: #fff;
+  padding-bottom: 170px;
 }
 
 h1 {
   font-size: 49px;
   font-weight: bold;
-}
-
-.container {
-  max-width: 1800px;
-  background-color: #fff;
-  padding-bottom: 170px;
 }
 
 .top {
