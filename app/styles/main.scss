@@ -12,6 +12,29 @@ $btn-font-weight: 700;
 $btn-border-radius-large: 24px;
 $theme-color: #0176C5;
 
+// equal height columns
+.row-xs-flex {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+}
+@media (min-width: 768px) {
+  .row-sm-flex {
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  .row-md-flex {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .row-lg-flex {
+    display: flex;
+  }
+}
+
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -31,7 +54,7 @@ h1 {
 }
 
 .top {
-  @extend .row,
+  @extend .row;
   background-color: $theme-color;
   color: #fff;
   margin-bottom: 20px;
@@ -68,6 +91,7 @@ h1 {
     @extend .col-md-4;
   }
   &__img {
+    @extend .img-responsive;
     margin: 0 auto 30px auto;
   }
   &__title,
@@ -84,6 +108,7 @@ h1 {
 
 .order {
   @extend .row;
+  @extend .row-md-flex;
   padding: 15px;
   text-align: center;
   div {
@@ -106,6 +131,7 @@ h1 {
     border-color: #ccc;
   }
   &__img {
+    @extend .img-responsive;
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -139,28 +165,7 @@ h1 {
 }
 
 
-// equal height columns
-.row-xs-flex {
-  display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-}
-@media (min-width: 768px) {
-  .row-sm-flex {
-    display: flex;
-  }
-}
-@media (min-width: 992px) {
-  .row-md-flex {
-    display: flex;
-  }
-}
-@media (min-width: 1200px) {
-  .row-lg-flex {
-    display: flex;
-  }
-}
+
 
 
 
